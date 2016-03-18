@@ -1,6 +1,6 @@
 {
   "name": "@nlammertyn/electrify-vidtext",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easily package your Meteor apps with Electron, and *butter*.",
   "main": "lib/index.js",
   "bin": {
