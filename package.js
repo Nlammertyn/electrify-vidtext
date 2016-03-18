@@ -1,10 +1,10 @@
 var VERSION = '2.1.5';
 
 Package.describe({
-  name: 'arboleya:electrify',
+  name: 'nlammertyn:electrify',
   version: VERSION,
   summary: 'Package your Meteor apps with Electron, and butter.',
-  git: 'https://github.com/arboleya/electrify',
+  git: 'https://github.com/Nlammertyn/electrify-vidtext.git',
   documentation: 'README.md'
 });
 

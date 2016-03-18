@@ -114,7 +114,7 @@ function electrify(create) {
     console.error('input folder doesn\'t exist\n  ' + program.input);
     process.exit();
   }
-  
+
   input = program.input || process.cwd();
 
   if(!is_meteor_app()) {
@@ -134,13 +134,13 @@ function electrify(create) {
     var list = fs.readFileSync(join(input, '.meteor', 'packages'), 'utf-8');
 
     // check if electrify is installed
-    if(!/^\s*arboleya:electrify\s*$/gm.test(list)) {
+    if(!/^\s*nlammertyn:electrify\s*$/gm.test(list)) {
 
       // if its not installed, install it
       var pwd = shell.pwd();
-      
+
       shell.cd(input);
-      shell.exec('meteor add arboleya:electrify');
+      shell.exec('meteor add nlammertyn:electrify');
       shell.cd(pwd);
     }
   }
@@ -161,7 +161,7 @@ function has_local_electrify(){
     console.error('input folder doesn\'t exist\n  ' + program.input);
     process.exit();
   }
-  
+
   var input = program.input || process.cwd();
 
   // validates meteor project
@@ -219,7 +219,7 @@ function parse_packager_options(){
       var parts = arg.split('=');
       var key = parts[0];
       var val = 'undefined' == typeof(parts[1]) ? true : parts[1];
-    
+
       if(~names.indexOf(key))
         options[key.slice(2)] = val;
       else

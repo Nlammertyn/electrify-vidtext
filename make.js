@@ -37,16 +37,16 @@ target.setup = function() {
 
     // links arboleya:electrify inside meteor
     shell.mkdir('-p', packages_dir);
-    shell.ln('-s', __dirname, path.join(packages_dir, 'arboleya-electrify'));
+    shell.ln('-s', __dirname, path.join(packages_dir, 'nlammertyn-electrify'));
 
     // removes mobile platforms
     spawn(meteor_bin, ['remove-platform', 'ios', 'android'], {
       stdio: 'inherit',
       cwd: leaderboard
     }).on('exit', function(){
-      
+
        // adding electrify meteor package
-      spawn(meteor_bin, ['add', 'arboleya:electrify'], {
+      spawn(meteor_bin, ['add', 'nlammertyn:electrify'], {
         stdio: 'inherit',
         cwd: leaderboard,
         // modify env var so electrify package will know how to proceed,
