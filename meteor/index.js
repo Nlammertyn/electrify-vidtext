@@ -37,8 +37,8 @@ function connect(port){
 
   if(!port) {
     log([
-      'cannot initialize connection. Did you `npm install -g electrify`?',
-      'install it and try running your meteor app with `electrify` npm command'
+      'cannot initialize connection. Did you `npm install -g electrify-vidtext`?',
+      'install it and try running your meteor app with `electrify-vidtext` npm command'
     ].join('\n'));
     return;
   }
