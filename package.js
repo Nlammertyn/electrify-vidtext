@@ -1,4 +1,4 @@
-var VERSION = '2.1.5';
+var VERSION = '2.1.6';
 
 Package.describe({
   name: 'nlammertyn:electrify',
