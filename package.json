@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "commander": "^2.8.1",
-    "electron-packager": "^5.2.1",
-    "electron-prebuilt": "^0.37.2",
+    "electron-packager": "^7.0.0",
+    "electron-prebuilt": "^0.37.6",
     "lodash": "^3.10.1",
     "server-destroy": "^1.0.1",
     "shelljs": "^0.5.3",
